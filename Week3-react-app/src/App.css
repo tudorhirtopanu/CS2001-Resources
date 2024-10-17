@@ -1,0 +1,67 @@
+body {
+  font-family: "Lato", sans-serif;
+  max-width: 75rem;
+  margin: auto;
+  height: 100vh;
+}
+
+header{
+  background-image:url('./assets/SharingFood.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  height:200px;
+  width: 100%;
+  margin: auto;
+}
+
+/**** Styling for main part ******************************/
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-bottom: 0.5rem solid;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+section, aside {
+  padding: 0.5rem;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+aside {
+  width: 25%;
+  min-width: 180px;
+  background-color: #deded8;
+}
+
+section {
+  min-width: 350px;
+  width: 75%;
+}
+
+/* Styling for search in aside */
+.search {
+  display: block;
+  width: auto;
+  text-align: left;
+}
+
+/* Styling with a media query */
+@media screen and (max-width: 700px) {
+  main {
+      flex-direction: column;
+  }
+  
+  aside {
+      min-width: 100%;
+  }
+
+  #hiddenSection {
+      overflow-wrap: break-word;
+  }
+}
