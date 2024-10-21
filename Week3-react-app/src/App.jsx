@@ -13,10 +13,6 @@ function App() {
 
           <section>
             <RegistrationForm />
-            <div className="center" id="hiddenSection">
-            <p id="hiddenParagraph"></p>
-            </div>
-
           </section>
        </main>
     </>
